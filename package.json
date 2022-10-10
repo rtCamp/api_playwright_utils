@@ -1,0 +1,21 @@
+{
+  "name": "easydash-playwright",
+  "version": "1.0.0",
+  "description": "This is generic framework for running API tests with playwright",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "api",
+    "playwright"
+  ],
+  "author": "rtCamp",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^6.1.2",
+    "@playwright/test": "^1.24.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "faker-js": "^1.0.0"
+  }
+}
