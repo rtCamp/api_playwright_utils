@@ -1,0 +1,1 @@
+import{a as e,b as m}from"../chunk-GX47GLIL.mjs";import{c as o,d as c,e as r,f as k}from"../chunk-BEPO4KA3.mjs";import{d as l}from"../chunk-DDHXTT42.mjs";var f=l((s,a)=>{c();k();m();var t=new o({locale:"uk",localeFallback:"en",locales:{uk:e,en:r}});a.exports=t});export default f();
