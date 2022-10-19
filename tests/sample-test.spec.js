@@ -1,4 +1,4 @@
-import { test, expect, request } from "@playwright/test";
+import { test } from "@playwright/test";
 import {
     GetPositiveResponse,
     PostPositiveResponse,
@@ -7,24 +7,24 @@ import {
     DeletePositiveResponse,
     GetNegativeResponse,
     PostNegativeResponse,
-     } from "../utils/utils"
-import { set_new_booking, update_request , patch_request,negative_post } from "../payload"
+} from "../utils/utils"
+import { set_new_booking, update_request, patch_request, negative_post } from "../payload"
 
 test("should test Positive response in Get request", async () => {
     const result = await GetPositiveResponse("api/users?page=2");
-        console.log( result);
-   
+    console.log(result);
+
 });
 
-test('should test Positive response in Post request', async ({request,baseURL}) => {
-    const result = await PostPositiveResponse("api/usersusers",set_new_booking);
+test('should test Positive response in Post request', async ({ request, baseURL }) => {
+    const result = await PostPositiveResponse("api/usersusers", set_new_booking);
     console.log(result);
-    
+
 });
 
 test('should test Positive response in put request', async () => {
-    const result =await PutPositiveResponse("api/users/2",update_request());
-    console.log (result);
+    const result = await PutPositiveResponse("api/users/2", update_request());
+    console.log(result);
 });
 
 test('should test Positive response in patch request', async () => {
@@ -39,7 +39,7 @@ test('should test Positive response in delete request', async () => {
 
 test("should test Negative response in get request", async () => {
     const result = await GetNegativeResponse("api/users/23");
-    console.log( result);
+    console.log(result);
 });
 
 test("should test Negative response in post request", async () => {
