@@ -33,27 +33,98 @@ In this file, please insert your desired response status based on your project d
 ## Executing the test cases with Utils
 In this framework there are several Utils that works and verifies all type of API requests. All the requests are categorized as positive and negative requests. 
 Defaultly We store all of our test cases inside the **tests** folder. When user will write a new test case heres some steps they need to follow for successfull execution,
-Here is the name of all utils,
 
-**GetPositiveResponse**
+## API
 
-**PostPositiveResponse**
+### GetPositiveRespons
 
-**PutPositiveResponse**
+Send Get request and verifies positive test scenarios
 
-**PatchPositiveResponse**
+_Parameters_
 
-**DeletePositiveResponse**
+-   _extension_ `string`: End point of BaseURL.
 
-**GetNegativeResponse**
+### PostPositiveResponse
 
-**PostNegativeResponse**
+Send Post request and verifies positive test scenarios
 
-**PutNegativeRsponse**
+_Parameters_
 
-**PatchNegativeResponse**
+-   _extension_ `string`: End point of BaseURL,
+-   _payload_ `Json` : Payloads for requests
 
-**DeleteNegativeResponse**
+
+### PutPositiveResponse
+
+Send Put request and verifies positive test scenarios
+
+_Parameters_
+
+-   _extension_ `string`: End point of BaseURL,
+-   _payload_ `Json` : Payloads for requests
+
+### PatchPositiveResponse
+
+Send Patch request and verifies positive test scenarios
+
+_Parameters_
+
+-   _extension_ `string`: End point of BaseURL,
+-   _payload_ `Json` : Payloads for requests
+
+
+### DeletePositiveResponse
+
+Send Delete request and verifies positive test scenarios
+
+_Parameters_
+
+-   _extension_ `string`: End point of BaseURL,
+-   _payload_ `Json` : Payloads for requests
+
+### GetNegativeResponse
+
+Send Get request and verifies negative test scenarios
+
+_Parameters_
+
+-   _extension_ `string`: End point of BaseURL,
+
+### PostNegativeResponse
+
+Send Post request and verifies negative test scenarios
+
+_Parameters_
+
+-   _extension_ `string`: End point of BaseURL,
+-   _payload_ `Json` : Payloads for requests
+
+### PutNegativeRsponse
+
+Send Put request and verifies negative test scenarios
+
+_Parameters_
+
+-   _extension_ `string`: End point of BaseURL,
+-   _payload_ `Json` : Payloads for requests
+
+### PatchNegativeResponse
+
+Send Patch request and verifies negative test scenarios
+
+_Parameters_
+
+-   _extension_ `string`: End point of BaseURL,
+-   _payload_ `Json` : Payloads for requests
+
+### DeleteNegativeResponse
+
+Send Delete request and verifies negative test scenarios
+
+_Parameters_
+
+-   _extension_ `string`: End point of BaseURL,
+-   _payload_ `Json` : Payloads for requests
 
 
 1. We need to import **test**, **expect** from playwright library in the beginning of the code to use all the functions.
