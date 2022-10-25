@@ -16,11 +16,13 @@ const GetPositiveResponse = async (element) => {
     });
     const response = await context.get(`/${element}`);
     expect(response.status()).toBe(_Response.getPositive);
+    expect(response.status()).toBeWithinRange(200,215);
     expect.soft(response.statusText()).not.toBe("Error");
     expect.soft(response.ok()).toBeTruthy();
     expect.soft(response.status()).toBeGreaterThanOrEqual(200)
     const res = await response.json();
     return res;
+    
 }
 const PostPositiveResponse = async (element, payload) => {
 

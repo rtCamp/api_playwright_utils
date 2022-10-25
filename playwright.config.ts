@@ -24,4 +24,23 @@ const config: PlaywrightTestConfig = {
   
 };
 
+// Created a custom asseration for validating the API response code
+expect.extend({
+  toBeWithinRange(received: number, firstnum: number, lastnum: number) {
+    const pass = received >= firstnum && received <= lastnum;
+    if (pass) {
+      return {
+        message: () => 'Test case is passed',
+        pass: true,
+      };
+    } else {
+      return {
+        message: () => `Test case is failed due to recived the status ${received}`,
+        pass: false,
+      };
+    }
+
+  },
+});
+
 export default config;
