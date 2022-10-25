@@ -24,4 +24,22 @@ const config: PlaywrightTestConfig = {
   
 };
 
+// Created a custom asseration for validating the API response code
+expect.extend({
+  toBeEqualto(status) {
+    if (status == 200) {
+      return {
+        message: () => 'Test case is passed and has status code 200',
+        pass: true,
+      };
+    } else {
+      return {
+        message: () => `Test case is failed due to recived the status ${status}`,
+        pass: false,
+      };
+    }
+
+  },
+});
+
 export default config;
