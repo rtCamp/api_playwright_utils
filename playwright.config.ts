@@ -26,15 +26,16 @@ const config: PlaywrightTestConfig = {
 
 // Created a custom asseration for validating the API response code
 expect.extend({
-  toBeEqualto(status) {
-    if (status == 200) {
+  toBeWithinRange(received: number, firstnum: number, lastnum: number) {
+    const pass = received >= firstnum && received <= lastnum;
+    if (pass) {
       return {
-        message: () => 'Test case is passed and has status code 200',
+        message: () => 'Test case is passed',
         pass: true,
       };
     } else {
       return {
-        message: () => `Test case is failed due to recived the status ${status}`,
+        message: () => `Test case is failed due to recived the status ${received}`,
         pass: false,
       };
     }
