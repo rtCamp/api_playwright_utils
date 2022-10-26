@@ -16,7 +16,7 @@ const GetPositiveResponse = async (element) => {
     });
     const response = await context.get(`/${element}`);
     expect(response.status()).toBe(_Response.getPositive);
-    expect(response.status()).toBeWithinRange(200,215);
+    expect(response.status()).toBeWithinRange(200,300);
     expect.soft(response.statusText()).not.toBe("Error");
     expect.soft(response.ok()).toBeTruthy();
     expect.soft(response.status()).toBeGreaterThanOrEqual(200)
@@ -39,6 +39,7 @@ const PostPositiveResponse = async (element, payload) => {
         }
     });
     expect(response.status()).toBe(_Response.postPositive);
+    expect(response.status()).toBeWithinRange(200, 300);
     expect.soft(response.statusText()).not.toBe("Error");;
     expect.soft(response.ok()).toBeTruthy();
     expect.soft(response.status()).toBeGreaterThanOrEqual(200)
@@ -62,6 +63,7 @@ const PutPositiveResponse = async (element, payload) => {
         }
     });
     expect(response.status()).toBe(_Response.putPositive);
+    expect(response.status()).toBeWithinRange(200, 300);
     expect.soft(response.statusText()).not.toBe("Error");;
     expect.soft(response.ok()).toBeTruthy();
 
@@ -87,6 +89,7 @@ const PatchPositiveResponse = async (element, payload) => {
         }
     });
     expect(response.status()).toBe(_Response.patchPositive);
+    expect(response.status()).toBeWithinRange(200, 300);
     expect.soft(response.statusText()).not.toBe("Error");;
     expect.soft(response.ok()).toBeTruthy();
     expect.soft(response.status()).toBeGreaterThanOrEqual(200)
@@ -110,6 +113,7 @@ const DeletePositiveResponse = async (element, payload) => {
         }
     });
     expect(response.status()).toBe(_Response.deletePositive);
+    expect(response.status()).toBeWithinRange(200, 300);
     expect(response.statusText()).not.toBe("Error");
     expect(response.ok()).toBeTruthy();
     expect(response.status()).toBeGreaterThanOrEqual(200);
@@ -129,6 +133,7 @@ const GetNegativeResponse = async (element) => {
     });
     const response = await context.get(`/${element}`);
     expect(response.status()).toBe(_Response.getNegative);
+    expect(response.status()).toBeWithinRange(400, 600);
     expect.soft(response.ok()).not.toBe("ok");
     expect.soft(response.ok()).toBeFalsy();
     expect.soft(response.status()).not.toEqual(200);
@@ -152,6 +157,7 @@ const PostNegativeResponse = async (element, payload) => {
         }
     });
     expect(response.status()).toBe(_Response.postNegative);
+    expect(response.status()).toBeWithinRange(400, 600);
     expect.soft(response.ok()).not.toBe("ok");
     expect.soft(response.ok()).toBeFalsy();
     expect.soft(response.status()).not.toEqual(200);
@@ -175,6 +181,7 @@ const PutNegativeResponse = async (element, payload) => {
         }
     });
     expect(response.status()).toBe(_Response.putNegative);
+    expect(response.status()).toBeWithinRange(400, 600);
     expect.soft(response.ok()).not.toBe("ok");
     expect.soft(response.ok()).toBeFalsy();
     expect.soft(response.status()).not.toEqual(200);
@@ -199,6 +206,7 @@ const PatchNegativeResponse = async (element, payload) => {
         }
     });
     expect(response.status()).toBe(_Response.patchNegative);
+    expect(response.status()).toBeWithinRange(400, 600);
     expect.soft(response.ok()).not.toBe("ok");
     expect.soft(response.ok()).toBeFalsy();
     expect.soft(response.status()).not.toEqual(200);
@@ -223,6 +231,7 @@ const DeleteNegativeResponse = async (element, payload) => {
         }
     });
     expect(response.status()).toBe(_Response.deleteNegative);
+    expect(response.status()).toBeWithinRange(400, 600);
     expect.soft(response.ok()).not.toBe("ok");
     expect.soft(response.ok()).toBeFalsy();
     expect.soft(response.status()).not.toEqual(200);
