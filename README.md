@@ -1,22 +1,23 @@
 # API Automation with Playwright
 This is an API automation framework that enhanced asserting and validating options with playwright
 
-Used Framewrok: https://playwright.dev/docs/test-api-testing
-
-## install
+## Install
 `npm install`
 
-## Setup
-Please configure the dotenv package and create a .env file from the sample.env file. provide your base URL and token on the env file.
+## Configuration
+
+### Configure baseURL and API Token
+This framework uses `.env` file to fetch `baseURL` and `API Token`, you can configure yours by putting your details in `sample.env` file and rename it to `.env` 
  
 
 ## General Declarations
-When anyone clone the repo, there is a file named
+
 ### playwright.config.ts
+
+`playwright.config.ts` contains all the default Pre-headers for executing our test framework. As **Playwright** is a standalone framework so,for performing API tests, we only need this config file, where it will handle all types of default headers and  **authorization**. By Using dot env packagage we can easily initialize the the baseURL and token from this config file only.
+
 ![ts file](https://user-images.githubusercontent.com/55917380/196962076-bdf551a3-bd87-457c-9f2c-924f022c913e.png)
 
-
-It contains all the default Pre-headers for executing our test framework. As **Playwright** is a standalone framework so,for performing API tests, we only need this config file, where it will handle all types of default headers and  **authorization**. By Using dot env packagage we can easily initialize the the baseURL and token from this config file only.
 
 ### payload.js
 
@@ -25,16 +26,15 @@ For executing different API scenarios, sometimes we need to use **.post** method
 <img width="1403" alt="two" src="https://user-images.githubusercontent.com/55917380/183078644-20df6fd4-2c0c-456f-8b4a-501538e3e345.png">
 
 ### response.js
-In this file, please insert your desired response status based on your project documentation. Please make sure all the responses are according to the positive and negative scenario. otherwise all utils will fail.
+
+In this file, please input your desired response status based on your project documentation. Please make sure all the responses are according to the positive and negative scenario. otherwise all utils will fail.
 <img width="801" alt="response" src="https://user-images.githubusercontent.com/55917380/196962223-2844f7a9-83ea-4819-a644-78d27c05c33e.png">
 
 
 
-## Executing the test cases with Utils
+## Utils
 In this framework there are several Utils that works and verifies all type of API requests. All the requests are categorized as positive and negative requests. 
-Defaultly We store all of our test cases inside the **tests** folder. When user will write a new test case heres some steps they need to follow for successfull execution,
-
-## API
+By default, we store all of our test cases inside the **tests** folder. We have developed few generic utils that can be used with any project. 
 
 ### GetPositiveRespons
 
@@ -148,4 +148,15 @@ To run a single file
 
 ## Reporting
 Playwright offers in-built reporting tool as well as it also supports 3rd party reports. To use inbuild report one should just add `reporter: 'html'` in the config file and after each execution report will be generate. For more information about how to configure reports in playwright please goto :https://playwright.dev/docs/test-reporters
+
+## Documentation
+
+* Playwright API Testing: https://playwright.dev/docs/test-api-testing
+
+
+
+## Does this interest you? ##
+
+<a href="https://rtcamp.com/careers/"><img src="https://rtcamp.com/wp-content/uploads/sites/2/2019/04/github-banner@2x.png" alt="Join us at rtCamp, we specialize in providing high performance enterprise WordPress solutions"></a>
+
 
