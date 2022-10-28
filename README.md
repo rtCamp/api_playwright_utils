@@ -44,6 +44,9 @@ _Parameters_
 
 -   _extension_ `string`: End point of BaseURL.
 
+_Returns_
+-   Json respone
+
 ### PostPositiveResponse
 
 Send Post request and verifies positive test scenarios
@@ -52,6 +55,9 @@ _Parameters_
 
 -   _extension_ `string`: End point of BaseURL,
 -   _payload_ `Json` : Payloads for requests
+
+_Returns_
+-   Json respone
 
 
 ### PutPositiveResponse
@@ -63,6 +69,9 @@ _Parameters_
 -   _extension_ `string`: End point of BaseURL,
 -   _payload_ `Json` : Payloads for requests
 
+_Returns_
+-   Json respone
+
 ### PatchPositiveResponse
 
 Send Patch request and verifies positive test scenarios
@@ -71,6 +80,9 @@ _Parameters_
 
 -   _extension_ `string`: End point of BaseURL,
 -   _payload_ `Json` : Payloads for requests
+
+_Returns_
+-   Json respone
 
 
 ### DeletePositiveResponse
@@ -82,6 +94,9 @@ _Parameters_
 -   _extension_ `string`: End point of BaseURL,
 -   _payload_ `Json` : Payloads for requests
 
+_Returns_
+-   Json respone
+
 ### GetNegativeResponse
 
 Send Get request and verifies negative test scenarios
@@ -89,6 +104,9 @@ Send Get request and verifies negative test scenarios
 _Parameters_
 
 -   _extension_ `string`: End point of BaseURL,
+
+_Returns_
+-   Json respone
 
 ### PostNegativeResponse
 
@@ -99,6 +117,9 @@ _Parameters_
 -   _extension_ `string`: End point of BaseURL,
 -   _payload_ `Json` : Payloads for requests
 
+_Returns_
+-   Json respone
+
 ### PutNegativeRsponse
 
 Send Put request and verifies negative test scenarios
@@ -107,6 +128,9 @@ _Parameters_
 
 -   _extension_ `string`: End point of BaseURL,
 -   _payload_ `Json` : Payloads for requests
+
+_Returns_
+-   Json respone
 
 ### PatchNegativeResponse
 
@@ -117,6 +141,9 @@ _Parameters_
 -   _extension_ `string`: End point of BaseURL,
 -   _payload_ `Json` : Payloads for requests
 
+_Returns_
+-   Json respone
+
 ### DeleteNegativeResponse
 
 Send Delete request and verifies negative test scenarios
@@ -125,6 +152,9 @@ _Parameters_
 
 -   _extension_ `string`: End point of BaseURL,
 -   _payload_ `Json` : Payloads for requests
+
+_Returns_
+-   Json respone
 
 
 1. We need to import **test**, **expect** from playwright library in the beginning of the code to use all the functions.
