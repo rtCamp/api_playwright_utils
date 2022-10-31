@@ -3,7 +3,7 @@ const { request, expect } = require('@playwright/test');
 import { _Response } from './response';
 require('dotenv').config();
 
-const GetPositiveResponse = async (element) => {
+const getPositiveResponse = async (element) => {
     //declaring context
     const context = await request.newContext({
         baseURL: process.env.URL,
@@ -24,7 +24,7 @@ const GetPositiveResponse = async (element) => {
     return res;
     
 }
-const PostPositiveResponse = async (element, payload) => {
+const postPositiveResponse = async (element, payload) => {
 
     const context = await request.newContext({
         baseURL: process.env.URL,
@@ -47,7 +47,7 @@ const PostPositiveResponse = async (element, payload) => {
     return res;
 }
 
-const PutPositiveResponse = async (element, payload) => {
+const putPositiveResponse = async (element, payload) => {
 
     const context = await request.newContext({
         baseURL: process.env.URL,
@@ -73,7 +73,7 @@ const PutPositiveResponse = async (element, payload) => {
     return res;
 }
 
-const PatchPositiveResponse = async (element, payload) => {
+const patchPositiveResponse = async (element, payload) => {
 
     const context = await request.newContext({
         baseURL: process.env.URL,
@@ -97,7 +97,7 @@ const PatchPositiveResponse = async (element, payload) => {
     return res;
 }
 
-const DeletePositiveResponse = async (element, payload) => {
+const deletePositiveResponse = async (element, payload) => {
 
     const context = await request.newContext({
         baseURL: process.env.URL,
@@ -120,7 +120,7 @@ const DeletePositiveResponse = async (element, payload) => {
     return response;
 }
 
-const GetNegativeResponse = async (element) => {
+const getNegativeResponse = async (element) => {
     //declaring context
     const context = await request.newContext({
         baseURL: process.env.URL,
@@ -142,7 +142,7 @@ const GetNegativeResponse = async (element) => {
     return res;
 }
 
-const PostNegativeResponse = async (element, payload) => {
+const postNegativeResponse = async (element, payload) => {
 
     const context = await request.newContext({
         baseURL: process.env.URL,
@@ -165,7 +165,7 @@ const PostNegativeResponse = async (element, payload) => {
     const res = await response.json();
     return res;
 }
-const PutNegativeResponse = async (element, payload) => {
+const putNegativeResponse = async (element, payload) => {
 
     const context = await request.newContext({
         baseURL: process.env.URL,
@@ -190,7 +190,7 @@ const PutNegativeResponse = async (element, payload) => {
     return res;
 }
 
-const PatchNegativeResponse = async (element, payload) => {
+const patchNegativeResponse = async (element, payload) => {
 
     const context = await request.newContext({
         baseURL: process.env.URL,
@@ -215,7 +215,7 @@ const PatchNegativeResponse = async (element, payload) => {
     return res;
 }
 
-const DeleteNegativeResponse = async (element, payload) => {
+const deleteNegativeResponse = async (element, payload) => {
 
     const context = await request.newContext({
         baseURL: process.env.URL,
@@ -241,16 +241,16 @@ const DeleteNegativeResponse = async (element, payload) => {
 
 
 module.exports = {
-    GetPositiveResponse,
-    PostPositiveResponse,
-    PutPositiveResponse,
-    PatchPositiveResponse,
-    DeletePositiveResponse,
-    GetNegativeResponse,
-    PostNegativeResponse,
-    PatchNegativeResponse,
-    DeleteNegativeResponse,
-    PutNegativeResponse,
+    getPositiveResponse,
+    postPositiveResponse,
+    putPositiveResponse,
+    patchPositiveResponse,
+    deletePositiveResponse,
+    getNegativeResponse,
+    postNegativeResponse,
+    patchNegativeResponse,
+    deleteNegativeResponse,
+    putNegativeResponse,
 };
 
 
