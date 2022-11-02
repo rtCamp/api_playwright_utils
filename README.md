@@ -36,7 +36,7 @@ In this file, please input your desired response status based on your project do
 In this framework, there are several Utils that works and verifies all type of API requests. All the requests are categorized as positive and negative requests. 
 By default, we store all of our test cases inside the **tests** folder. We have developed a few generic utils that can be used with any project. 
 
-### getPositiveRespons
+### getPositiveResponse
 
 Send get request and verifies positive test scenarios
 
