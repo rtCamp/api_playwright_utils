@@ -1,5 +1,5 @@
-# API Automation with Playwright
-This is an API Automation framework that enhanced asserting and validating options with playwright
+# API Test Automation with Playwright
+This is an API Automation framework that enhanced asserting and validating options with Playwright framework.
 
 ## Install
 `npm install`
