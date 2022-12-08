@@ -179,3 +179,6 @@ To run a single file
 ## Reporting
 Playwright offers in-built reporting tool as well as it also supports 3rd party reports. To use inbuild report one should just add `reporter: 'html'` in the config file and after each execution report will be generate. For more information about how to configure reports in playwright please goto :https://playwright.dev/docs/test-reporters
 
+## BTW, We're Hiring!
+
+<a href="https://rtcamp.com/"><img src="https://rtcamp.com/wp-content/uploads/sites/2/2019/04/github-banner@2x.png" alt="Join us at rtCamp, we specialize in providing high performance enterprise WordPress solutions"></a>
