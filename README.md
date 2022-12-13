@@ -1,31 +1,36 @@
 # API Automation with Playwright
-This is an API automation framework that enhanced asserting and validating options with playwright
+This is an API automation framework that has an enhanced asserting and validating options with playwright.
 
-Used Framewrok: https://playwright.dev/docs/test-api-testing
+Used Framework: https://playwright.dev/docs/test-api-testing
+
 
 ## install
 `npm install`
 
 ## Setup
-Please configure the dotenv package and create a .env file from the sample.env file. provide your base URL and token on the env file.
+Configure the dotenv package and create a .env file from the sample.env file. Enter your base URL and token in the env file.
+
  
 
 ## General Declarations
-When anyone clone the repo, there is a file named
+If you clone the repo, there is a file named Playwright.config.ts
 ### playwright.config.ts
 ![ts file](https://user-images.githubusercontent.com/55917380/196962076-bdf551a3-bd87-457c-9f2c-924f022c913e.png)
 
 
-It contains all the default Pre-headers for executing our test framework. As **Playwright** is a standalone framework so,for performing API tests, we only need this config file, where it will handle all types of default headers and  **authorization**. By Using dot env packagage we can easily initialize the the baseURL and token from this config file only.
+It contains all the default Pre-headers for executing our test framework. As Playwright is a standalone framework, we only need this config file for performing API tests, where it will handle all types of default headers and authorization. By using dot env package, you can easily initialize the baseURL and token from this config file only.
+
 
 ### payload.js
 
-For executing different API scenarios, sometimes we need to use **.post** method to send a post request; which basically can create any object. For a neat and robust experience, user can create custom payload for different type of post requests within exportable-fucntions.
+For executing different API scenarios, you may need to use .post method to send a post request; which can basically create any object. For a neat and robust experience, a user can create custom payload for different type of post requests within exportable-functions.
+
 
 <img width="1403" alt="two" src="https://user-images.githubusercontent.com/55917380/183078644-20df6fd4-2c0c-456f-8b4a-501538e3e345.png">
 
 ### response.js
-In this file, please insert your desired response status based on your project documentation. Please make sure all the responses are according to the positive and negative scenario. otherwise all utils will fail.
+In this file, insert your desired response status based on your project documentation. Ensure that all the responses are according to the positive and negative scenarios, otherwise, all utils will fail.
+
 <img width="801" alt="response" src="https://user-images.githubusercontent.com/55917380/196962223-2844f7a9-83ea-4819-a644-78d27c05c33e.png">
 
 
@@ -33,6 +38,8 @@ In this file, please insert your desired response status based on your project d
 ## Executing the test cases with Utils
 In this framework there are several Utils that works and verifies all type of API requests. All the requests are categorized as positive and negative requests. 
 Defaultly We store all of our test cases inside the **tests** folder. When user will write a new test case heres some steps they need to follow for successfull execution,
+In this manner, you can add many test cases and assertions at once to test out API's for them.
+
 
 ## API
 
@@ -177,7 +184,8 @@ To run a single file
 `npx playwright test filename.test.js`
 
 ## Reporting
-Playwright offers in-built reporting tool as well as it also supports 3rd party reports. To use inbuild report one should just add `reporter: 'html'` in the config file and after each execution report will be generate. For more information about how to configure reports in playwright please goto :https://playwright.dev/docs/test-reporters
+Playwright has an in-built reporting tool, and it also supports 3rd party reports. To use in-built report, you should just add reporter: 'html' in the config file and after each execution, a report will be generated. For more information about how to configure reports in playwright, refer to the documentation :https://playwright.dev/docs/test-reporters
+
 
 ## BTW, We're Hiring!
 
