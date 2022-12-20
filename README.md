@@ -36,8 +36,7 @@ In this file, insert your desired response status based on your project document
 
 
 ## Executing the test cases with Utils
-In this framework there are several Utils that works and verifies all type of API requests. All the requests are categorized as positive and negative requests. 
-Defaultly We store all of our test cases inside the **tests** folder. When user will write a new test case heres some steps they need to follow for successfull execution,
+This framework has several Utils that works and verifies all types of API requests. All the requests are categorized as positive and negative requests. By default, store all test cases are stored inside the tests' folder. When a user writes a new test case, here are some steps they need to follow for successful execution.
 In this manner, you can add many test cases and assertions at once to test out API's for them.
 
 
@@ -184,7 +183,7 @@ To run a single file
 `npx playwright test filename.test.js`
 
 ## Reporting
-Playwright has an in-built reporting tool, and it also supports 3rd party reports. To use in-built report, you should just add reporter: 'html' in the config file and after each execution, a report will be generated. For more information about how to configure reports in playwright, refer to the documentation :https://playwright.dev/docs/test-reporters
+Playwright has an in-built reporting tool, and it also supports 3rd party reports. To use in-built report, you should just add reporter: 'html' in the config file and after each execution, a report will be generated. For more information about how to configure reports in playwright, refer to the documentation:https://playwright.dev/docs/test-reporters
 
 
 ## BTW, We're Hiring!
