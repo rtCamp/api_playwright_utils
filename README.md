@@ -172,7 +172,7 @@ _Returns_
 
 4. We will use a **test** block of playwright to initialize our test case. Note: Each time user will write a new test scenario, **request** and **baseURL** is needed to pass inside async array function so that one can use these functions inside one test block.`test("A new test scenario", async () => {})`;
 
-5.Inside the test case please declare one constant and inside that make a request according to your need from our utils, like, `const result = await GetPositiveResponse("Extention of the baseURL")`;
+5. Inside the test case please declare one constant and inside that make a request according to your need from our utils, like, `const result = await GetPositiveResponse("Extention of the baseURL")`;
 
 6. For verification, you can now console log the declared variable, and it will return the result with JSON format directly. One don't need to check with any default expect method like `expect (response.status()).toBe(200)` to be written multiple times. Utils functions covers all the default assertion method. So if you need to verify specific data inside the response then, you can use expect function, but apart from that, utils covered all.
 
