@@ -192,7 +192,7 @@ To run a single file
 `npx playwright test filename.test.js`
 
 ## Reporting
-Playwright has an in-built reporting tool, and it also supports 3rd party reports. To use in-built report, you should just add reporter: 'html' in the config file and after each execution, a report will be generated. For more information about how to configure reports in playwright, refer to the documentation:https://playwright.dev/docs/test-reporters
+Playwright has an in-built reporting tool, and it also supports 3rd party reports. To use in-built report, you should just add reporter: 'html' in the config file and after each execution, a report will be generated. For more information about how to configure reports in playwright, refer to the documentation: https://playwright.dev/docs/test-reporters
 
 
 ## BTW, We're Hiring!
